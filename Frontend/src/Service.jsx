@@ -222,9 +222,9 @@ const Service = () => {
         <li className="breadcrumb-item">
           <a href="index.html">Home</a>
         </li>
-        <li className="breadcrumb-item">
+        {/* <li className="breadcrumb-item">
           <a href="#">Pages</a>
-        </li>
+        </li> */}
         <li className="breadcrumb-item active text-primary">Service</li>
       </ol>
     </div>

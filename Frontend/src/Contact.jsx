@@ -199,7 +199,7 @@ const Contact = () => {
             <li className="breadcrumb-item">
               <Link to="/">Home</Link>
             </li>
-            <li className="breadcrumb-item">Pages</li>
+            {/* <li className="breadcrumb-item">Pages</li> */}
             <li className="breadcrumb-item active text-primary">Contact</li>
           </ol>
         </div>

@@ -221,9 +221,9 @@ function About() {
         <li className="breadcrumb-item">
           <a href="index.html">Home</a>
         </li>
-        <li className="breadcrumb-item">
+        {/* <li className="breadcrumb-item">
           <a href="#">Pages</a>
-        </li>
+        </li> */}
         <li className="breadcrumb-item active text-primary">About</li>
       </ol>
     </div>
