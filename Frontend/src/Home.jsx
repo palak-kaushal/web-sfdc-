@@ -26,7 +26,7 @@ const Home = () => {
           <div className="d-flex flex-wrap">
             <a href="#" className="text-muted me-4">
               <i className="fas fa-map-marker-alt text-primary me-2" />
-              9th floor,unit 60,sushma infinium,Zirkpur,Chandigarh,Panjab,140603
+              Find a location
             </a>
             <a href="#" className="text-muted me-4">
               <i className="fas fa-phone-alt text-primary me-2" />
@@ -110,10 +110,10 @@ const Home = () => {
             {/* <a href="project.html" className="nav-item nav-link">
               Projects
             </a>   */}
-            
+             <Link  to="/blog" className="nav-item nav-link ">Blog</Link>
 
 
-            <div className="nav-item dropdown">
+            {/* <div className="nav-item dropdown">
               <a
                 href="#"
                 className="nav-link dropdown-toggle"
@@ -138,7 +138,7 @@ const Home = () => {
                   404 Page
                 </a>
               </div>
-            </div>
+            </div> */}
             {/* <a href="contact.html" className="nav-item nav-link">
               Contact
             </a> */}
@@ -209,7 +209,7 @@ const Home = () => {
 
     {/* Item 1 */}
     <div className="carousel-item active">
-      <img src="assets/img/carousel-1.jpg" className="d-block w-100" alt="Image" />
+      <img src="assets/img/carousel-1.png" className="d-block w-100" alt="Image" />
       <div className="carousel-caption text-start p-3">
         <h1 className="display-1 text-capitalize text-white mb-4 animate__animated animate__fadeInUp" style={{ animationDelay: "1.3s" }}>
           WELCOME TO WEBSFDC
@@ -224,7 +224,7 @@ const Home = () => {
 
     {/* Item 2 */}
     <div className="carousel-item">
-      <img src="assets/img/carousel-2.jpg" className="d-block w-100" alt="Image" />
+      <img src="assets/img/carousel-2.png" className="d-block w-100" alt="Image" />
       <div className="carousel-caption text-center p-3">
         <h1 className="display-1 text-capitalize text-white mb-4">The most prestigious Investments company in worldwide.</h1>
         <p className="mb-5 fs-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
@@ -235,7 +235,7 @@ const Home = () => {
 
     {/* Item 3 */}
     <div className="carousel-item">
-      <img src="assets/img/carousel-3.jpg" className="d-block w-100" alt="Image" />
+      <img src="assets/img/carousel-3.png" className="d-block w-100" alt="Image" />
       <div className="carousel-caption text-end p-3">
         <h1 className="display-1 text-capitalize text-white mb-4">The most prestigious Investments company in worldwide.</h1>
         <p className="mb-5 fs-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
@@ -255,6 +255,147 @@ const Home = () => {
 </div>
 {/* Carousel End */}
   {/* Carousel End */}
+  {/* Features  Start */}
+  <div className="container-fluid service py-5">
+    <div className="container py-5">
+      <div
+        className="text-center mx-auto pb-5 wow fadeInUp"
+        data-wow-delay="0.1s"
+        style={{ maxWidth: 800 }}
+      >
+        <h4 className="text-primary">Our Features</h4>
+        <h1 className="display-4">
+          {" "}
+          Mastering Salesforce & Mobile Web Development for Your Business
+        </h1>
+        <p> At Websfdc we specialize in delivering cutting-edge Salesforce solutions using Lightning Web Components (LWC) and Apex to help businesses transform their processes. Our team of expert developers crafts customized applications, automations, and integrations to drive efficiency and growth for your organization.
+
+</p>
+      </div>
+      <div className="row g-4 justify-content-center text-center">
+        <div
+          className="col-md-6 col-lg-4 col-xl-3 wow fadeInUp"
+          data-wow-delay="0.1s"
+        >
+          <div className="service-item bg-light rounded">
+            <div className="service-img">
+              {/* <img
+                src="assets/img/service-1.jpg"
+                className="img-fluid w-100 rounded-top"
+                alt=""
+              /> */}
+            </div>
+            <div className="service-content text-center p-4">
+              <div className="service-content-inner">
+                <a href="#" className="h4 mb-4 d-inline-flex text-start">
+                  <i className="fas fa-handshake fa-3x me-2" /> Trusted Salesforce Experts
+                </a>
+                <p className="mb-4">
+                We are a trusted Salesforce development company with years of experience in delivering high-quality, custom solutions for businesses of all sizes. Our expert team ensures top-notch results.
+                </p>
+                <a className="btn btn-light rounded-pill py-2 px-4" href="#">
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="col-md-6 col-lg-4 col-xl-3 wow fadeInUp"
+          data-wow-delay="0.3s"
+        >
+          <div className="service-item bg-light rounded">
+            <div className="service-img">
+              {/* <img
+                src="assets/img/service-2.jpg"
+                className="img-fluid w-100 rounded-top"
+                alt=""
+              /> */}
+            </div>
+            <div className="service-content text-center p-4">
+              <div className="service-content-inner">
+                <a href="#" className="h4 mb-4 d-inline-flex text-start">
+                  <i className="fas fa-dollar-sign fa-3x me-2" /> Cost-Effective Solutions
+                </a>
+                <p className="mb-4">
+                 Our Salesforce solutions are designed to offer the best value for your investment. We provide affordable services, ensuring you get high-quality Salesforce implementations without breaking your budget.
+                </p>
+                <a className="btn btn-light rounded-pill py-2 px-4" href="#">
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="col-md-6 col-lg-4 col-xl-3 wow fadeInUp"
+          data-wow-delay="0.5s"
+        >
+          <div className="service-item bg-light rounded">
+            <div className="service-img">
+              {/* <img
+                src="assets/img/service-4.jpg"
+                className="img-fluid w-100 rounded-top"
+                alt=""
+              /> */}
+            </div>
+            <div className="service-content text-center p-4">
+              <div className="service-content-inner">
+                <a href="#" className="h4 mb-4 d-inline-flex text-start">
+                  <i className="fas fa-bullseye fa-3x me-2" /> Tailored Salesforce Plans
+                </a>
+                <p className="mb-4">
+                 Whether you're a small business or a large enterprise, we offer flexible Salesforce plans that cater to your specific requirements. Our team ensures the perfect fit for your business with customized development.
+                </p>
+                <a className="btn btn-light rounded-pill py-2 px-4" href="#">
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="col-md-6 col-lg-4 col-xl-3 wow fadeInUp"
+          data-wow-delay="0.7s"
+        >
+          <div className="service-item bg-light rounded">
+            <div className="service-img">
+              {/* <img
+                src="assets/img/service-3.jpg"
+                className="img-fluid w-100 rounded-top"
+                alt=""
+              /> */}
+            </div>
+            <div className="service-content text-center p-4">
+              <div className="service-content-inner">
+                <a href="#" className="h4 mb-4 d-inline-flex text-start">
+                  
+                  <i className="fa fa-headphones fa-3x me-2" /> 24/7 Expert Support
+                    
+                </a>
+                <p className="mb-4">
+                 Our dedicated support team is available 24/7 to ensure that your Salesforce platform runs smoothly. From troubleshooting to optimization, we are always ready to assist with any queries or issues you may have.We proactively monitor.
+                </p>
+                <a className="btn btn-light rounded-pill py-2 px-4" href="#">
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* <div className="col-12">
+          <a
+            className="btn btn-primary rounded-pill py-3 px-5 wow fadeInUp"
+            data-wow-delay="0.1s"
+            href="#"
+          > */}
+            
+          {/* </a>
+        </div> */}
+      </div>
+    </div>
+  </div>
+  {/* Features End */}
   {/* About Start */}
   <div className="container-fluid about bg-light py-5">
     <div className="container py-5">
@@ -262,12 +403,12 @@ const Home = () => {
         <div className="col-lg-6 col-xl-5 wow fadeInLeft" data-wow-delay="0.1s">
           <div className="about-img">
             <img
-              src="assets/img/about-3.png"
+              src="assets/img/about-2.png"
               className="img-fluid w-100 rounded-top bg-white"
               alt="Image"
             />
             <img
-              src="assets/img/about-2.jpg"
+              src="assets/img/about-3.png"
               className="img-fluid w-100 rounded-bottom"
               alt="Image"
             />
@@ -453,7 +594,7 @@ Happy Clients Worldwide
           <div className="service-item bg-light rounded">
             <div className="service-img">
               <img
-                src="assets/img/service-1.jpg"
+                src="assets/img/service-1.png"
                 className="img-fluid w-100 rounded-top"
                 alt=""
               />
@@ -480,7 +621,7 @@ Happy Clients Worldwide
           <div className="service-item bg-light rounded">
             <div className="service-img">
               <img
-                src="assets/img/service-2.jpg"
+                src="assets/img/service-2.png"
                 className="img-fluid w-100 rounded-top"
                 alt=""
               />
@@ -507,7 +648,7 @@ Happy Clients Worldwide
           <div className="service-item bg-light rounded">
             <div className="service-img">
               <img
-                src="assets/img/service-4.jpg"
+                src="assets/img/service-4.png"
                 className="img-fluid w-100 rounded-top"
                 alt=""
               />
@@ -536,7 +677,7 @@ Happy Clients Worldwide
           <div className="service-item bg-light rounded">
             <div className="service-img">
               <img
-                src="assets/img/service-3.jpg"
+                src="assets/img/service-3.png"
                 className="img-fluid w-100 rounded-top"
                 alt=""
               />
@@ -676,9 +817,9 @@ Happy Clients Worldwide
         style={{ maxWidth: 800 }}
       >
         <h4 className="text-primary">From Blog</h4>
-        <h1 className="display-4">Salesforce News and Updates
-          Stay up to date with the latest trends, updates, and innovations in Salesforce development, LWC, Apex, and much more. Read our blog to gain valuable insights into the Salesforce ecosystem.
-        </h1>
+        <h1 className="display-4">Salesforce News and Updates</h1>
+          <p>Stay up to date with the latest trends, updates, and innovations in Salesforce development, LWC, Apex, and much more. Read our blog to gain valuable insights into the Salesforce ecosystem.</p>
+        
 
       </div>
       <div className="row g-4 justify-content-center">
@@ -701,13 +842,13 @@ Happy Clients Worldwide
             </div>
             <div className="project-img">
               <img
-                src="assets/img/blog-1.jpg"
+                src="assets/img/blog-1.png"
                 className="img-fluid w-100 rounded"
                 alt="Image"
               />
               <div className="blog-plus-icon">
                 <a
-                  href="assets/img/blog-1.jpg"
+                  href="assets/img/blog-1.png"
                   data-lightbox="blog-1"
                   className="btn btn-primary btn-md-square rounded-pill"
                 >
@@ -740,13 +881,13 @@ Happy Clients Worldwide
             </div>
             <div className="project-img">
               <img
-                src="assets/img/blog-2.jpg"
+                src="assets/img/blog-2.png"
                 className="img-fluid w-100 rounded"
                 alt="Image"
               />
               <div className="blog-plus-icon">
                 <a
-                  href="assets/img/blog-2.jpg"
+                  href="assets/img/blog-2.png"
                   data-lightbox="blog-2"
                   className="btn btn-primary btn-md-square rounded-pill"
                 >
@@ -779,13 +920,13 @@ Learn the best practices when writing Apex code to ensure scalability, security,
             </div>
             <div className="project-img">
               <img
-                src="assets/img/blog-3.jpg"
+                src="assets/img/blog-3.png"
                 className="img-fluid w-100 rounded"
                 alt="Image"
               />
               <div className="blog-plus-icon">
                 <a
-                  href="assets/img/blog-3.jpg"
+                  href="assets/img/blog-3.png"
                   data-lightbox="blog-3"
                   className="btn btn-primary btn-md-square rounded-pill"
                 >
@@ -826,7 +967,7 @@ Learn the best practices when writing Apex code to ensure scalability, security,
           <div className="team-item rounded">
             <div className="team-img">
               <img
-                src="assets/img/team-1.jpg"
+                src="assets/img/team-1.png"
                 className="img-fluid w-100 rounded-top"
                 alt="Image"
               />
@@ -874,7 +1015,7 @@ Learn the best practices when writing Apex code to ensure scalability, security,
           <div className="team-item rounded">
             <div className="team-img">
               <img
-                src="assets/img/team-2.jpg"
+                src="assets/img/team-2.png"
                 className="img-fluid w-100 rounded-top"
                 alt="Image"
               />
@@ -922,7 +1063,7 @@ Learn the best practices when writing Apex code to ensure scalability, security,
           <div className="team-item rounded">
             <div className="team-img">
               <img
-                src="assets/img/team-3.jpg"
+                src="assets/img/team-4.png"
                 className="img-fluid w-100 rounded-top"
                 alt="Image"
               />
@@ -970,7 +1111,7 @@ Learn the best practices when writing Apex code to ensure scalability, security,
           <div className="team-item rounded">
             <div className="team-img">
               <img
-                src="assets/img/team-4.jpg"
+                src="assets/img/team-3.png"
                 className="img-fluid w-100 rounded-top"
                 alt="Image"
               />
@@ -1015,138 +1156,101 @@ Learn the best practices when writing Apex code to ensure scalability, security,
     </div>
   </div>
   {/* Team End */}
-  {/* Testimonial Start */}
-  <div className="container-fluid testimonial bg-light py-5">
-    <div className="container py-5">
-      <div className="row g-4 align-items-center">
-        <div className="col-xl-4 wow fadeInLeft" data-wow-delay="0.1s">
-          <div className="h-100 rounded">
-            <h4 className="text-primary">Testimonial </h4>
-            <h1 className="display-4 mb-4">What Our Customers Are Saying About Websfdc Technology</h1>
-            <p className="mb-4">At Websfdc Technology, we take pride in delivering top-notch Salesforce web development solutions. Here's what our satisfied clients have to say about working with us:
-              
-            </p>
-            <a
-              className="btn btn-primary rounded-pill text-white py-3 px-5"
-              href="#"
-            >
-              Read All Reviews <i className="fas fa-arrow-right ms-2" />
-            </a>
-          </div>
-        </div>
-        <div className="col-xl-8">
-          <div
-            className="testimonial-carousel owl-carousel wow fadeInUp"
-            data-wow-delay="0.1s"
-          >
-            <div
-              className="testimonial-item bg-white rounded p-4 wow fadeInUp"
-              data-wow-delay="0.3s"
-            >
-              <div className="d-flex">
-                <div>
-                  <i className="fas fa-quote-left fa-3x text-dark me-3" />
-                </div>
-                <p className="mt-4">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Magnam eos impedit eveniet dolorem culpa ullam incidunt vero
-                  quo recusandae nemo? Molestiae doloribus iure,
-                </p>
-              </div>
-              <div className="d-flex justify-content-end">
-                <div className="my-auto text-end">
-                  <h5>Person Name</h5>
-                  <p className="mb-0">Profession</p>
-                </div>
-                <div className="bg-white rounded-circle ms-3">
-                  <img
-                    src="assets/img/testimonial-1.jpg"
-                    className="rounded-circle p-2"
-                    style={{
-                      width: 80,
-                      height: 80,
-                      border: "1px solid",
-                      borderColor: "var(--bs-primary)"
-                    }}
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
-            <div
-              className="testimonial-item bg-white rounded p-4 wow fadeInUp"
-              data-wow-delay="0.5s"
-            >
-              <div className="d-flex">
-                <div>
-                  <i className="fas fa-quote-left fa-3x text-dark me-3" />
-                </div>
-                <p className="mt-4">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Magnam eos impedit eveniet dolorem culpa ullam incidunt vero
-                  quo recusandae nemo? Molestiae doloribus iure,
-                </p>
-              </div>
-              <div className="d-flex justify-content-end">
-                <div className="my-auto text-end">
-                  <h5>Person Name</h5>
-                  <p className="mb-0">Profession</p>
-                </div>
-                <div className="bg-white rounded-circle ms-3">
-                  <img
-                    src="assets/img/testimonial-2.jpg"
-                    className="rounded-circle p-2"
-                    style={{
-                      width: 80,
-                      height: 80,
-                      border: "1px solid",
-                      borderColor: "var(--bs-primary)"
-                    }}
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
-            <div
-              className="testimonial-item bg-white rounded p-4 wow fadeInUp"
-              data-wow-delay="0.7s"
-            >
-              <div className="d-flex">
-                <div>
-                  <i className="fas fa-quote-left fa-3x text-dark me-3" />
-                </div>
-                <p className="mt-4">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Magnam eos impedit eveniet dolorem culpa ullam incidunt vero
-                  quo recusandae nemo? Molestiae doloribus iure,
-                </p>
-              </div>
-              <div className="d-flex justify-content-end">
-                <div className="my-auto text-end">
-                  <h5>Person Name</h5>
-                  <p className="mb-0">Profession</p>
-                </div>
-                <div className="bg-white rounded-circle ms-3">
-                  <img
-                    src="assets/img/testimonial-3.jpg"
-                    className="rounded-circle p-2"
-                    style={{
-                      width: 80,
-                      height: 80,
-                      border: "1px solid",
-                      borderColor: "var(--bs-primary)"
-                    }}
-                    alt=""
-                  />
-                </div>
+      {/* Testimonial Start */}
+<div className="container-fluid bg-white py-5">
+  <div className="container text-center">
+
+    {/* Heading */}
+    <h4 className="text-primary fw-bold">Testimonial</h4>
+    <h2 className="fw-bold display-5 mb-3">
+      What Our Customers Are Saying About <br /> Websfdc Technology
+    </h2>
+    <p className="text-muted mb-5">
+      At Websfdc Technology, we take pride in delivering top-notch Salesforce web development solutions. 
+      Here’s what our satisfied clients have to say about working with us:
+    </p>
+
+    {/* Testimonials with Arrows */}
+    <div className="d-flex justify-content-between align-items-center">
+
+
+      {/* Testimonial Cards */}
+      <div className="d-flex flex-wrap justify-content-center gap-4">
+
+        {/* Card 1 */}
+        <div className="card shadow-sm border-0 p-3" style={{ maxWidth: "420px" }}>
+          <div className="d-flex align-items-start">
+            <img 
+              src="assets/img/testimonial-2.png" 
+              className="rounded" 
+              style={{ width: "150px", height: "155px", objectFit: "cover" }} 
+              alt="Michael Brown" 
+            />
+            <div className="ms-3">
+              <h5 className="mb-1">Michael Brown</h5>
+              <p className="text-muted mb-1">Salesforce Administrator</p>
+              <div className="text-warning mb-2">
+                ★★★★☆
               </div>
             </div>
           </div>
+          <p className="text-muted mt-3 mb-0">
+            "The team at Websfdc Technology helped us streamline our processes and integrate Salesforce seamlessly. 
+            Their expertise and support made a huge difference in our operations!"
+          </p>
         </div>
+{/* card 2 */}
+ <div className="card shadow-sm border-0 p-3" style={{ maxWidth: "420px" }}>
+          <div className="d-flex align-items-start">
+            <img 
+              src="assets/img/testimonial-3.png" 
+              className="rounded" 
+              style={{ width: "150px", height: "155px", objectFit: "cover" }} 
+              alt="Michael Brown" 
+            />
+            <div className="ms-3">
+              <h5 className="mb-1">Sarah Williams</h5>
+              <p className="text-muted mb-1">Salesforce Project Manager</p>
+              <div className="text-warning mb-2">
+                ★★★★☆
+              </div>
+            </div>
+          </div>
+          <p className="text-muted mt-3 mb-0">
+           "Websfdc Technology completely transformed our Salesforce platform!
+            Their team provided exceptional web development services, delivering 
+            a highly customized solution that exceeded our expectations."
+          </p>
+        </div>
+        {/* Card 3 */}
+        <div className="card shadow-sm border-0 p-3" style={{ maxWidth: "420px" }}>
+          <div className="d-flex align-items-start">
+            <img 
+              src="assets/img/testimonial-1.png" 
+              className="rounded" 
+              style={{ width: "150px", height: "155px", objectFit: "cover" }} 
+              alt="Jessica Davis" 
+            />
+            <div className="ms-3">
+              <h5 className="mb-1">Jessica Davis</h5>
+              <p className="text-muted mb-1">Salesforce Consultant</p>
+              <div className="text-warning mb-2">
+                ★★★★☆
+              </div>
+            </div>
+          </div>
+          <p className="text-muted mt-3 mb-0">
+            "I couldn't be more satisfied with Websfdc Technology’s work. 
+            They crafted an efficient and user-friendly Salesforce web platform 
+            that made a significant impact on our productivity!"
+          </p>
+        </div>
+
       </div>
     </div>
   </div>
-  {/* Testimonial End */}
+</div>
+{/* Testimonial End */}
   {/* FAQ Start */}
   <div className="container-fluid faq py-5">
     <div className="container py-5">
@@ -1272,7 +1376,7 @@ Common Frequently Asked Questions
         <div className="col-lg-6 wow fadeInRight" data-wow-delay="0.3s">
           <div className="faq-img RotateMoveRight rounded">
             <img
-              src="assets/img/faq-img.jpg"
+              src="assets/img/faq-img.png"
               className="img-fluid rounded w-100"
               alt="Image"
             />

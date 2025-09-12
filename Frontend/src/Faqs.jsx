@@ -20,7 +20,7 @@ function Faqs() {
                 </a>
                 <a href="mailto:Example@gmail.com" className="text-muted me-0">
                   <i className="fas fa-envelope text-primary me-2" />
-                  Example@gmail.com
+                  info@websfdc.co.in
                 </a>
               </div>
             </div>
@@ -90,11 +90,9 @@ function Faqs() {
                 <Link to="/service" className="nav-item nav-link">
                   Service
                 </Link>
-                <Link to="/project" className="nav-item nav-link">
-                  Project
-                </Link>
-
-                <div className="nav-item dropdown">
+                 <Link  to="/blog" className="nav-item nav-link ">Blog</Link>
+               
+                {/* <div className="nav-item dropdown">
                   <a
                     href="#"
                     className="nav-link dropdown-toggle"
@@ -119,7 +117,7 @@ function Faqs() {
                       404 Page
                     </Link>
                   </div>
-                </div>
+                </div> */}
 
                 <Link to="/contact" className="nav-item nav-link">
                   Contact

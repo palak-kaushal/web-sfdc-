@@ -27,7 +27,7 @@ function About() {
           <div className="d-flex flex-wrap">
             <a href="#" className="text-muted me-4">
               <i className="fas fa-map-marker-alt text-primary me-2" />
-              Find A Location
+              Find a location
             </a>
             <a href="#" className="text-muted me-4">
               <i className="fas fa-phone-alt text-primary me-2" />
@@ -111,10 +111,11 @@ function About() {
             {/* <a href="project.html" className="nav-item nav-link">
               Projects
             </a>   */}
+             <Link  to="/blog" className="nav-item nav-link ">Blog</Link>
            
 
 
-            <div className="nav-item dropdown">
+            {/* <div className="nav-item dropdown">
               <a
                 href="#"
                 className="nav-link dropdown-toggle"
@@ -139,7 +140,7 @@ function About() {
                   404 Page
                 </a>
               </div>
-            </div>
+            </div> */}
             {/* <a href="contact.html" className="nav-item nav-link">
               Contact
             </a> */}
@@ -240,7 +241,7 @@ function About() {
               alt="Image"
             />
             <img
-              src="assets/img/about-2.jpg"
+              src="assets/img/about-2.png"
               className="img-fluid w-100 rounded-bottom"
               alt="Image"
             />
@@ -342,17 +343,17 @@ Happy Clients Worldwide
                     className="counter-value fs-1 fw-bold text-dark"
                     data-toggle="counter-up"
                   >
-                    32
+                    129
                   </span>
                   <h4
                     className="text-dark fs-1 mb-0"
                     style={{ fontWeight: 600, fontSize: 25 }}
                   >
-                    k+
+                    +
                   </h4>
                 </div>
                 <div className="w-100 d-flex align-items-center justify-content-center">
-                  <p className="text-white mb-0">Project Complete</p>
+                  <p className="text-white mb-0">Salesforce Projects Completed</p>
                 </div>
               </div>
             </div>
@@ -363,7 +364,7 @@ Happy Clients Worldwide
                     className="counter-value fs-1 fw-bold text-white"
                     data-toggle="counter-up"
                   >
-                    21
+                    99
                   </span>
                   <h4
                     className="text-white fs-1 mb-0"
@@ -373,7 +374,7 @@ Happy Clients Worldwide
                   </h4>
                 </div>
                 <div className="w-100 d-flex align-items-center justify-content-center">
-                  <p className="mb-0">Years Of Experience</p>
+                  <p className="mb-0">Awards & Recognitions</p>
                 </div>
               </div>
             </div>
@@ -384,7 +385,7 @@ Happy Clients Worldwide
                     className="counter-value fs-1 fw-bold text-dark"
                     data-toggle="counter-up"
                   >
-                    97
+                  556
                   </span>
                   <h4
                     className="text-dark fs-1 mb-0"
@@ -394,7 +395,7 @@ Happy Clients Worldwide
                   </h4>
                 </div>
                 <div className="w-100 d-flex align-items-center justify-content-center">
-                  <p className="text-white mb-0">Team Members</p>
+                  <p className="text-white mb-0">Certified Salesforce Experts</p>
                 </div>
               </div>
             </div>
@@ -404,214 +405,147 @@ Happy Clients Worldwide
     </div>
   </div>
   {/* About End */}
-  {/* Team Start */}
-  <div className="container-fluid team py-5">
+  {/* FAQ Start */}
+  <div className="container-fluid faq py-5">
     <div className="container py-5">
-      <div
-        className="text-center mx-auto pb-5 wow fadeInUp"
-        data-wow-delay="0.1s"
-        style={{ maxWidth: 800 }}
-      >
-        <h4 className="text-primary">Our Team</h4>
-        <h1 className="display-4">Our Websfdc Company Dedicated Team Member</h1>
-      </div>
-      <div className="row g-4 justify-content-center">
-        <div
-          className="col-sm-6 col-md-6 col-lg-4 col-xl-3 wow fadeInUp"
-          data-wow-delay="0.1s"
-        >
-          <div className="team-item rounded">
-            <div className="team-img">
-              <img
-                src="assets/img/team-1.jpg"
-                className="img-fluid w-100 rounded-top"
-                alt="Image"
-              />
-              <div className="team-icon">
-                <a
-                  className="btn btn-primary btn-sm-square text-white rounded-circle mb-3"
-                  href=""
+      <div className="row g-5 align-items-center">
+        <div className="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
+          <div className="pb-5">
+            <h4 className="text-primary">FAQs</h4>Some Important FAQ's
+Common Frequently Asked Questions
+            <h1 className="display-4"></h1>
+          </div>
+          <div className="accordion bg-light rounded p-4" id="accordionExample">
+            <div className="accordion-item border-0 mb-4">
+              <h2 className="accordion-header" id="headingOne">
+                <button
+                  className="accordion-button text-dark fs-5 fw-bold rounded-top"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseTOne"
                 >
-                  <i className="fas fa-share-alt" />
-                </a>
-                <div className="team-icon-share">
-                  <a
-                    className="btn btn-primary btn-sm-square text-white rounded-circle mb-3"
-                    href=""
-                  >
-                    <i className="fab fa-facebook-f" />
-                  </a>
-                  <a
-                    className="btn btn-primary btn-sm-square text-white rounded-circle mb-3"
-                    href=""
-                  >
-                    <i className="fab fa-twitter" />
-                  </a>
-                  <a
-                    className="btn btn-primary btn-sm-square text-white rounded-circle mb-0"
-                    href=""
-                  >
-                    <i className="fab fa-instagram" />
-                  </a>
+                  What is SalesForce?
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                className="accordion-collapse collapse show"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+                <div className="accordion-body my-2">
+                  <h5></h5>
+                  <p>
+                    Salesforce development involves customizing the Salesforce platform through coding (Apex) and building dynamic applications using Lightning Web Components (LWC) to cater to the specific needs of your business. It helps optimize sales, service, and marketing operations with tailored features.
+                  </p>
                 </div>
               </div>
             </div>
-            <div className="team-content bg-dark text-center rounded-bottom p-4">
-              <div className="team-content-inner rounded-bottom">
-                <h4 className="text-white">Mark D. Brock</h4>
-                <p className="text-muted mb-0">CEO &amp; Founder</p>
+            <div className="accordion-item border-0 mb-4">
+              <h2 className="accordion-header" id="headingTwo">
+                <button
+                  className="accordion-button collapsed text-dark fs-5 fw-bold rounded-top"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  What is the difference between salesforce admin and salesforce developer?
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                className="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample"
+              >
+                <div className="accordion-body my-2">
+                  
+                  <p>
+                    Salesforce Admin focuses on managing and configuring the Salesforce environment, such as user permissions, data management, and reporting. A Salesforce Developer, on the other hand, writes code, customizes the platform, and builds custom applications using Apex and LWC to extend Salesforce functionality.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="accordion-item border-0 mb-4">
+              <h2 className="accordion-header" id="headingThree">
+                <button
+                  className="accordion-button collapsed text-dark fs-5 fw-bold rounded-top"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                How can salesforce help my business?
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                className="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample"
+              >
+                <div className="accordion-body my-2">
+
+                  <p>
+                    Salesforce provides a unified platform for managing sales, customer service, marketing, and analytics. It helps businesses streamline processes, gain valuable insights into customer data, and automate tasks, leading to better efficiency, productivity, and customer satisfaction.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="accordion-item border-0 mb-0">
+              <h2 className="accordion-header" id="headingFour">
+                <button
+                  className="accordion-button collapsed text-dark fs-5 fw-bold rounded-top"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour"
+                  aria-expanded="false"
+                  aria-controls="collapseFour"
+                >
+                   What is lightning web componentes?
+                </button>
+              </h2>
+              <div
+                id="collapseFour"
+                className="accordion-collapse collapse"
+                aria-labelledby="headingFour"
+                data-bs-parent="#accordionExample"
+              >
+                <div className="accordion-body my-2">
+                 
+                  <p>
+                    Lightning Web Components (LWC) is a programming model for building fast and modern web applications on the Salesforce platform. It allows developers to create reusable, lightweight components with improved performance and enhanced user experiences, fully leveraging the latest web standards.
+
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div
-          className="col-sm-6 col-md-6 col-lg-4 col-xl-3 wow fadeInUp"
-          data-wow-delay="0.3s"
-        >
-          <div className="team-item rounded">
-            <div className="team-img">
-              <img
-                src="assets/img/team-2.jpg"
-                className="img-fluid w-100 rounded-top"
-                alt="Image"
-              />
-              <div className="team-icon">
-                <a
-                  className="btn btn-primary btn-sm-square text-white rounded-circle mb-3"
-                  href=""
-                >
-                  <i className="fas fa-share-alt" />
-                </a>
-                <div className="team-icon-share">
-                  <a
-                    className="btn btn-primary btn-sm-square text-white rounded-circle mb-3"
-                    href=""
-                  >
-                    <i className="fab fa-facebook-f" />
-                  </a>
-                  <a
-                    className="btn btn-primary btn-sm-square text-white rounded-circle mb-3"
-                    href=""
-                  >
-                    <i className="fab fa-twitter" />
-                  </a>
-                  <a
-                    className="btn btn-primary btn-sm-square text-white rounded-circle mb-0"
-                    href=""
-                  >
-                    <i className="fab fa-instagram" />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="team-content bg-dark text-center rounded-bottom p-4">
-              <div className="team-content-inner rounded-bottom">
-                <h4 className="text-white">Mark D. Brock</h4>
-                <p className="text-muted mb-0">CEO &amp; Founder</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          className="col-sm-6 col-md-6 col-lg-4 col-xl-3 wow fadeInUp"
-          data-wow-delay="0.5s"
-        >
-          <div className="team-item rounded">
-            <div className="team-img">
-              <img
-                src="assets/img/team-3.jpg"
-                className="img-fluid w-100 rounded-top"
-                alt="Image"
-              />
-              <div className="team-icon">
-                <a
-                  className="btn btn-primary btn-sm-square text-white rounded-circle mb-3"
-                  href=""
-                >
-                  <i className="fas fa-share-alt" />
-                </a>
-                <div className="team-icon-share">
-                  <a
-                    className="btn btn-primary btn-sm-square text-white rounded-circle mb-3"
-                    href=""
-                  >
-                    <i className="fab fa-facebook-f" />
-                  </a>
-                  <a
-                    className="btn btn-primary btn-sm-square text-white rounded-circle mb-3"
-                    href=""
-                  >
-                    <i className="fab fa-twitter" />
-                  </a>
-                  <a
-                    className="btn btn-primary btn-sm-square text-white rounded-circle mb-0"
-                    href=""
-                  >
-                    <i className="fab fa-instagram" />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="team-content bg-dark text-center rounded-bottom p-4">
-              <div className="team-content-inner rounded-bottom">
-                <h4 className="text-white">Mark D. Brock</h4>
-                <p className="text-muted mb-0">CEO &amp; Founder</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          className="col-sm-6 col-md-6 col-lg-4 col-xl-3 wow fadeInUp"
-          data-wow-delay="0.7s"
-        >
-          <div className="team-item rounded">
-            <div className="team-img">
-              <img
-                src="assets/img/team-4.jpg"
-                className="img-fluid w-100 rounded-top"
-                alt="Image"
-              />
-              <div className="team-icon">
-                <a
-                  className="btn btn-primary btn-sm-square text-white rounded-circle mb-3"
-                  href=""
-                >
-                  <i className="fas fa-share-alt" />
-                </a>
-                <div className="team-icon-share">
-                  <a
-                    className="btn btn-primary btn-sm-square text-white rounded-circle mb-3"
-                    href=""
-                  >
-                    <i className="fab fa-facebook-f" />
-                  </a>
-                  <a
-                    className="btn btn-primary btn-sm-square text-white rounded-circle mb-3"
-                    href=""
-                  >
-                    <i className="fab fa-twitter" />
-                  </a>
-                  <a
-                    className="btn btn-primary btn-sm-square text-white rounded-circle mb-0"
-                    href=""
-                  >
-                    <i className="fab fa-instagram" />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="team-content bg-dark text-center rounded-bottom p-4">
-              <div className="team-content-inner rounded-bottom">
-                <h4 className="text-white">Mark D. Brock</h4>
-                <p className="text-muted mb-0">CEO &amp; Founder</p>
-              </div>
-            </div>
+        <div className="col-lg-6 wow fadeInRight" data-wow-delay="0.3s">
+          <div className="faq-img RotateMoveRight rounded">
+            <img
+              src="assets/img/faq-img.png"
+              className="img-fluid rounded w-100"
+              alt="Image"
+            />
+            <a
+              className="faq-btn btn btn-primary rounded-pill text-white py-3 px-5"
+              href="#"
+            >
+              Read More Q &amp; A <i className="fas fa-arrow-right ms-2" />
+            </a>
           </div>
         </div>
       </div>
     </div>
   </div>
-  {/* Team End */}
+  {/* FAQ End */}
   {/* Footer Start */}
   <div className="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
     <div className="container py-5">
@@ -619,11 +553,9 @@ Happy Clients Worldwide
         <div className="col-md-6 col-lg-6 col-xl-3">
           <div className="footer-item d-flex flex-column">
             <div className="footer-item">
-              <h4 className="text-white mb-4">Newsletter</h4>
+              <h4 className="text-white mb-4">Websfdc</h4>
               <p className="mb-3">
-                Dolor amet sit justo amet elitr clita ipsum elitr est.Lorem
-                ipsum dolor sit amet, consectetur adipiscing elit consectetur
-                adipiscing elit.
+                At Websfdc Technology, we specialize in Salesforce web development, offering innovative solutions to streamline business processes and enhance customer relationships. Your success is our priority.
               </p>
               <div className="position-relative mx-auto rounded-pill">
                 <input
@@ -635,7 +567,6 @@ Happy Clients Worldwide
                   type="button"
                   className="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2"
                 >
-                  SignUp
                 </button>
               </div>
             </div>
@@ -643,27 +574,25 @@ Happy Clients Worldwide
         </div>
         <div className="col-md-6 col-lg-6 col-xl-3">
           <div className="footer-item d-flex flex-column">
-            <h4 className="text-white mb-4">Explore</h4>
+            <h4 className="text-white mb-4">Useful Links</h4>
             <a href="#">
-              <i className="fas fa-angle-right me-2" /> Home
+              <i className="fas fa-angle-right me-2" /> About us
             </a>
             <a href="#">
               <i className="fas fa-angle-right me-2" /> Services
             </a>
             <a href="#">
-              <i className="fas fa-angle-right me-2" /> About Us
+              <i className="fas fa-angle-right me-2" /> Features
+            </a>
+            
+            <a href="#">
+              <i className="fas fa-angle-right me-2" /> FAQS
             </a>
             <a href="#">
-              <i className="fas fa-angle-right me-2" /> Latest Projects
+              <i className="fas fa-angle-right me-2" /> Our blog
             </a>
             <a href="#">
-              <i className="fas fa-angle-right me-2" /> testimonial
-            </a>
-            <a href="#">
-              <i className="fas fa-angle-right me-2" /> Our Team
-            </a>
-            <a href="#">
-              <i className="fas fa-angle-right me-2" /> Contact Us
+              <i className="fas fa-angle-right me-2" /> Contact 
             </a>
           </div>
         </div>
@@ -671,20 +600,17 @@ Happy Clients Worldwide
           <div className="footer-item d-flex flex-column">
             <h4 className="text-white mb-4">Contact Info</h4>
             <a href="">
-              <i className="fa fa-map-marker-alt me-2" /> 123 Street, New York,
-              USA
+              <i className="fa fa-map-marker-alt me-2" /> 9th floor,Unit 60,Sushma infinium,Zirkpur,Chandigarh,Panjab,140603
             </a>
             <a href="">
-              <i className="fas fa-envelope me-2" /> info@example.com
+              <i className="fas fa-envelope me-2" />info@websfdctech.co.in
             </a>
+          
             <a href="">
-              <i className="fas fa-envelope me-2" /> info@example.com
-            </a>
-            <a href="">
-              <i className="fas fa-phone me-2" /> +012 345 67890
+              <i className="fas fa-phone me-2" /> +91 7015548507
             </a>
             <a href="" className="mb-3">
-              <i className="fas fa-print me-2" /> +012 345 67890
+              <i className="fas fa-print me-2" /> +91 7015548507
             </a>
             <div className="d-flex align-items-center">
               <a className="btn btn-light btn-md-square me-2" href="">
@@ -736,28 +662,28 @@ Happy Clients Worldwide
           <span className="text-body">
             <a href="#" className="border-bottom text-primary">
               <i className="fas fa-copyright text-light me-2" />
-              Your Site Name
+              ,All rights reserved.
             </a>
-            , All right reserved.
+         Copyright 2025 Websfdc Technology
           </span>
         </div>
         <div className="col-md-6 text-center text-md-end text-body">
           {/*/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. *** /*/}
           {/*/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, *** /*/}
           {/*/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". *** /*/}
-          Designed By{" "}
+          {" "}
           <a
             className="border-bottom text-primary"
             href="https://htmlcodex.com"
           >
-            HTML Codex
+            
           </a>{" "}
-          Distributed By{" "}
+          {" "}
           <a
             className="border-bottom text-primary"
             href="https://themewagon.com"
           >
-            ThemeWagon
+          
           </a>
         </div>
       </div>

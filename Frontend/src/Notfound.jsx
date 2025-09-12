@@ -86,10 +86,7 @@ const Notfound = () => {
                 <Link to="/service" className="nav-item nav-link">
                   Service
                 </Link>
-                <Link to="/project" className="nav-item nav-link">
-                  Project
-                </Link>
-
+                
                 <div className="nav-item dropdown">
                   <a
                     href="#"

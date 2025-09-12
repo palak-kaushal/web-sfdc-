@@ -65,8 +65,9 @@ function Team() {
                   <Link to="/" className="nav-item nav-link">Home</Link>
                   <Link to="/about" className="nav-item nav-link">About</Link>
                   <Link to="/service" className="nav-item nav-link">Service</Link>
-                  <Link to="/project" className="nav-item nav-link">Project</Link>
-
+                   <Link  to="/blog" className="nav-item nav-link ">Blog</Link>
+                  
+{/* 
                   <div className="nav-item dropdown">
                     <a href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                       Pages
@@ -78,7 +79,7 @@ function Team() {
                       <Link to="/faqs" className="dropdown-item">FAQs</Link>
                       <Link to="/notfound" className="dropdown-item">404 Page</Link>
                     </div>
-                  </div>
+                  </div> */}
 
                   <Link to="/contact" className="nav-item nav-link">Contact</Link>
                 </div>
@@ -113,7 +114,7 @@ function Team() {
               <div className="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                 <div className="team-item rounded">
                   <div className="team-img">
-                    <img src="assets/img/team-1.jpg" className="img-fluid w-100 rounded-top" alt="Team1" />
+                    <img src="assets/img/team-1.png" className="img-fluid w-100 rounded-top" alt="Team1" />
                   </div>
                   <div className="team-content bg-dark text-center rounded-bottom p-4">
                     <h4 className="text-white">Mark D. Brock</h4>
