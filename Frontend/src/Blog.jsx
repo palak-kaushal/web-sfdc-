@@ -12,30 +12,30 @@ const Blog = () => {
               <div className="d-flex flex-wrap">
                 <a href="#" className="text-muted me-4">
                   <i className="fas fa-map-marker-alt text-primary me-2" />
-                  Find A Location
+                   9th floor, Unit 60, Sushma Infinium, Zirakpur,Chandigarh Punjab,140603
                 </a>
                 <a href="#" className="text-muted me-4">
                   <i className="fas fa-phone-alt text-primary me-2" />
-                  +01234567890
+                  +91 7015548507
                 </a>
                 <a href="#" className="text-muted me-0">
                   <i className="fas fa-envelope text-primary me-2" />
-                  Example@gmail.com
+                 info@websdfctech.co.in
                 </a>
               </div>
             </div>
             <div className="col-lg-4 text-center text-lg-end">
               <div className="d-flex align-items-center justify-content-end">
-                <a href="#" className="btn btn-primary btn-square rounded-circle nav-fill me-3">
+                <a href="https://www.facebook.com/people/Websfdc-Technology-Pvt-Ltd/61580310165683/?rdid=x9m2lBpGoIlkwnIK&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1CfpDtCw93%2F" className="btn btn-primary btn-square rounded-circle nav-fill me-3">
                   <i className="fab fa-facebook-f text-white" />
                 </a>
-                <a href="#" className="btn btn-primary btn-square rounded-circle nav-fill me-3">
+                <a href="https://x.com/websfdc_tech?t=MjGQegl9BVB7bidFXkvptA&s=09" className="btn btn-primary btn-square rounded-circle nav-fill me-3">
                   <i className="fab fa-twitter text-white" />
                 </a>
-                <a href="#" className="btn btn-primary btn-square rounded-circle nav-fill me-3">
+                <a href="https://www.instagram.com/websfdc_technology/?igsh=aHVvMmJicHpkd2Jq" className="btn btn-primary btn-square rounded-circle nav-fill me-3">
                   <i className="fab fa-instagram text-white" />
                 </a>
-                <a href="#" className="btn btn-primary btn-square rounded-circle nav-fill me-0">
+                <a href="https://www.linkedin.com/company/websfdc/posts/?feedView=all" className="btn btn-primary btn-square rounded-circle nav-fill me-0">
                   <i className="fab fa-linkedin-in text-white" />
                 </a>
               </div>
@@ -55,8 +55,8 @@ const Blog = () => {
           <nav className="navbar navbar-expand-lg navbar-dark bg-white py-3 px-4">
             <Link to="/" className="navbar-brand p-0">
               <h1 className="text-primary m-0">
-                <i className="fas fa-donate me-3" />
-                Investa
+                <i className="fas fa-cloud-sun me-3" />
+                Websdfc
               </h1>
             </Link>
             <button
@@ -112,18 +112,12 @@ const Blog = () => {
                 </Link>
               </div>
               <div className="d-flex align-items-center flex-nowrap pt-xl-0">
-                <button
-                  className="btn btn-primary btn-md-square mx-2"
-                  data-bs-toggle="modal"
-                  data-bs-target="#searchModal"
-                >
-                  <i className="fas fa-search" />
-                </button>
+                
                 <a
                   href="#"
                   className="btn btn-primary rounded-pill text-white py-2 px-4 ms-2 flex-wrap flex-sm-shrink-0"
                 >
-                  Start Investa
+                  Start Websfdc
                 </a>
               </div>
             </div>

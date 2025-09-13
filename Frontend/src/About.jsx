@@ -27,7 +27,7 @@ function About() {
           <div className="d-flex flex-wrap">
             <a href="#" className="text-muted me-4">
               <i className="fas fa-map-marker-alt text-primary me-2" />
-              Find a location
+             9th floor, Unit 60, Sushma Infinium, Zirakpur,Chandigarh Punjab,140603
             </a>
             <a href="#" className="text-muted me-4">
               <i className="fas fa-phone-alt text-primary me-2" />
@@ -42,25 +42,25 @@ function About() {
         <div className="col-lg-4 text-center text-lg-end">
           <div className="d-flex align-items-center justify-content-end">
             <a
-              href="#"
+              href="https://www.facebook.com/people/Websfdc-Technology-Pvt-Ltd/61580310165683/?rdid=x9m2lBpGoIlkwnIK&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1CfpDtCw93%2F"
               className="btn btn-primary btn-square rounded-circle nav-fill me-3"
             >
               <i className="fab fa-facebook-f text-white" />
             </a>
             <a
-              href="#"
+              href="https://x.com/websfdc_tech?t=MjGQegl9BVB7bidFXkvptA&s=09"
               className="btn btn-primary btn-square rounded-circle nav-fill me-3"
             >
               <i className="fab fa-twitter text-white" />
             </a>
             <a
-              href="#"
+              href="https://www.instagram.com/websfdc_technology/?igsh=aHVvMmJicHpkd2Jq#"
               className="btn btn-primary btn-square rounded-circle nav-fill me-3"
             >
               <i className="fab fa-instagram text-white" />
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/company/websfdc/posts/?feedView=all"
               className="btn btn-primary btn-square rounded-circle nav-fill me-0"
             >
               <i className="fab fa-linkedin-in text-white" />
@@ -81,7 +81,7 @@ function About() {
       <nav className="navbar navbar-expand-lg navbar-dark bg-white py-3 px-4">
         <a href="index.html" className="navbar-brand p-0">
           <h1 className="text-primary m-0">
-            <i className="fas fa-donate me-3" />
+            <i className="fas fa-cloud-sun me-3" />
           Websfdc
           </h1>
           {/* <assets/img src="img/logo.png" alt="Logo"> */}
@@ -147,13 +147,7 @@ function About() {
               <Link  to="/contact" className="nav-item nav-link">Contact</Link>
           </div>
           <div className="d-flex align-items-center flex-nowrap pt-xl-0">
-            <button
-              className="btn btn-primary btn-md-square mx-2"
-              data-bs-toggle="modal"
-              data-bs-target="#searchModal"
-            >
-              <i className="fas fa-search" />
-            </button>
+           
             <a
               href="#"
               className="btn btn-primary rounded-pill text-white py-2 px-4 ms-2 flex-wrap flex-sm-shrink-0"
