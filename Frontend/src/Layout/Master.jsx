@@ -7,8 +7,8 @@ const Master = () => {
   return (
     <>
     <Header/>
-    <Footer/>
     <Outlet/>
+    <Footer/>
     </>
   )
 }

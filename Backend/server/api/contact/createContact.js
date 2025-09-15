@@ -1,91 +1,82 @@
-const Contact = require("./contactModel")
-const bcrypt = require("bcryptjs")
-const jwt = require("jsonwebtoken")
-const sendMail = require("../../config/nodemailer")
-
-require("dotenv").config()
-
+const Contact = require("./contactModel");
+const sendMail = require("../../config/nodemailer");
+require("dotenv").config();
 
 const createContact = async(req, res) => {
     try {
-        const { name, email, phone, project, subject, message } = req.body
-            // const image = req.files.image[0].filename
-            // const pancard = req.files.pancard[0].filename
-            // const addharcard = req.files.addharcard[0].filename
+        const { name, email, phone, project, subject, message } = req.body;
 
-        const validation = []
 
-        if (!name || typeof name !== "string") {
-            validation.push("name is required and type must be string ")
-        }
-        if (!email || typeof email !== "string") {
-            validation.push("email is required and type must be string ")
-        }
-
-        if (!phone || typeof phone !== "string") {
-            validation.push("phone is required and type must be string ")
-        }
-
-        if (!project || typeof project !== "string") {
-            validation.push("project is required and type must be string ")
-        }
-
-        if (!subject || typeof subject !== "string") {
-            validation.push("subject is required and type must be string ")
-        }
-        if (!message || typeof message !== "string") {
-            validation.push("message is required and type must be string ")
-        }
-
+        const validation = [];
+        if (!name || typeof name !== "string") validation.push("Name is required");
+        if (!email || typeof email !== "string") validation.push("Email is required");
+        if (!phone || typeof phone !== "string") validation.push("Phone is required");
+        if (!project || typeof project !== "string") validation.push("Project is required");
+        if (!subject || typeof subject !== "string") validation.push("Subject is required");
+        if (!message || typeof message !== "string") validation.push("Message is required");
 
         if (validation.length > 0) {
-            return res.json({
-                status: 400,
+            return res.status(400).json({
                 success: false,
-                message: "validation error",
-                error: validation
-            })
+                message: "Validation error",
+                errors: validation,
+            });
         }
 
 
-        const user = new Contact({
-            name: name,
-            email: email,
-            phone: phone,
-            project: project,
-            subject: subject,
-            message: message
-        })
-
-        await user.save()
+        const user = new Contact({ name, email, phone, project, subject, message });
+        await user.save();
 
 
-        const adminMsg = ` New contact submission:
+        const adminMsg = `📩 New Contact Submission:
 
-            Name: ${name}
-            Email: ${email}
-            Phone: ${phone}
-            Project: ${project}
-            Subject: ${subject}
-            Message: ${message}`;
+        Name: ${name}
+        Email: ${email}
+        Phone: ${phone}
+        Project: ${project}
+        Subject: ${subject}
+        Message: ${message}
+        `;
 
-        await sendMail(process.env.EMAIL, `New Contact from ${name}`, adminMsg);
+        await sendMail(
+            process.env.EMAIL,
+            `New Contact from ${name}`,
+            adminMsg
+        );
 
-        res.json({
-            status: 201,
+
+        const userMsg = `Hello ${name},
+
+        ✅ Thank you for contacting Websfdc Technology!  
+        We have received your message and will get back to you soon.  
+
+        Your submitted details:
+        - Project: ${project}
+        - Subject: ${subject}
+
+        Best regards,  
+        Websfdc Technology Team
+        `;
+
+        await sendMail(
+            email,
+            "Thank you for contacting Websfdc Technology",
+            userMsg
+        );
+
+        return res.status(201).json({
             success: true,
-            message: "new user is create successfully",
-            data: user
-        })
+            message: "Contact created. Emails sent to admin & user.",
+            data: user,
+        });
     } catch (err) {
-        res.json({
-            status: 500,
+        console.error(" Error in createContact:", err.message);
+        return res.status(500).json({
             success: false,
-            message: "internal server error",
-            error: err.message
-        })
-
+            message: "Internal server error",
+            error: err.message,
+        });
     }
-}
+};
 
-module.exports = { createContact }
+module.exports = { createContact };
