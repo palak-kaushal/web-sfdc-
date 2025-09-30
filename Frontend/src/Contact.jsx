@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import axios from "axios";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -20,32 +18,51 @@ const Contact = () => {
     }));
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    try {
- 
-      await axios.post("http://localhost:5000/api/createcontact", formData);
-      alert("✅ Message sent successfully!");
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        project: "",
-        subject: "",
-        message: "",
-      });
-    } catch (error) {
-      console.error("AxiosError:", error);
-      alert("❌ Failed to send message. Please try again.");
+
+    // Prepare message for admin
+    const adminMessage = `New Contact Form Submission:
+Name: ${formData.name}
+Email: ${formData.email}
+Phone: ${formData.phone}
+Project: ${formData.project}
+Subject: ${formData.subject}
+Message: ${formData.message}`;
+
+    const adminNumber = "7876657938"; // Admin WhatsApp number
+    window.open(
+      `https://wa.me/${adminNumber}?text=${encodeURIComponent(adminMessage)}`,
+      "_blank"
+    );
+
+    // Prepare message for user (if phone provided)
+    if (formData.phone) {
+      const userNumber = `91${formData.phone}`; // User's phone with country code
+      const userMessage = `Hi ${formData.name}, thanks for contacting us! We will get back to you shortly.`;
+      window.open(
+        `https://wa.me/${userNumber}?text=${encodeURIComponent(userMessage)}`,
+        "_blank"
+      );
     }
+
+    // Reset form
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      project: "",
+      subject: "",
+      message: "",
+    });
+
+    alert(
+      "✅ WhatsApp message opened for admin and user (click send to actually send)."
+    );
   };
 
   return (
-
     <>
-     
-     
-
       {/* Contact Section */}
       <div className="container-fluid contact bg-light py-5">
         <div className="container py-5">
@@ -53,10 +70,10 @@ const Contact = () => {
             {/* Intro Section */}
             <div className="col-lg-6">
               <div className="contact-item pb-5">
-                <h1 className="text-primary">Contact Us</h1>
-                <h1 className="display-4 mb-4">If you have any comments, feel free to reach out to Websfdc Tech</h1>
+                <h4 className="text-primary">Contact Us</h4>
+                <h1 className="display-4 mb-4">Get In Touch With Us</h1>
                 <p className="mb-0">
-                The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code, and you're done. Download Now.  
+                  Fill out the form and we’ll get back to you as soon as possible.
                 </p>
               </div>
             </div>
@@ -154,8 +171,8 @@ const Contact = () => {
                   </div>
 
                   <div className="col-12">
-                    <button type="submit" className="btn btn-primary w-100 py-3">
-                      Send Message
+                    <button type="submit" className="btn btn-success w-100 py-3">
+                      <i className="fab fa-whatsapp me-2"></i> Send Message via WhatsApp
                     </button>
                   </div>
                 </div>
@@ -179,6 +196,5 @@ const Contact = () => {
     </>
   );
 };
-
 
 export default Contact;
